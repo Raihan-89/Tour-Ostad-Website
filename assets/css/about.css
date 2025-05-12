@@ -1,0 +1,211 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+/* background-color: #00520A; */
+*{
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+    background-color: #e4e8e9;
+    margin: 0;
+}
+body {
+
+}
+
+/* Header & Nav */
+.header{
+    position: sticky;
+    width: 100%;
+    top: 0;
+    margin: 0;
+    z-index: 100;
+    transition: transform 0.2s ease;
+}
+
+.nav-logo{
+    text-decoration: none;
+    background-color: transparent;
+    color: white;
+    font-weight: bold;
+    font-style: italic;
+    font-size: 20px;
+}
+.nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #00520A;
+    padding: 10px 20px;
+}
+.nav-list{
+    background-color: #00520A;
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+.nav-list li{
+    background-color: transparent;
+    margin: 0 10px;
+}
+.nav-links{
+    position: relative;
+    text-decoration: none;
+    color: white;
+    padding: 10px 15px;
+    display: block;
+    transition: transform 0.2s ease;
+    background-color: transparent;
+    z-index: 1;
+}
+.nav-links::after{
+    content: '';
+    width: 0;
+    height: 2px;
+    background-color: rgb(59, 155, 72);
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    transition: width 0.4s;
+}
+.nav-links:hover{
+    transform: scale(1.15);
+}
+.nav-links:hover::after{
+    width: 60%;
+}
+.nav-close,
+.nav-toggle {
+  display: none;
+}
+
+.contents{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+.text-contents{
+    margin: 0 auto;
+    margin-top: 100px;
+    text-align: center;
+    max-width: 80%;
+    height: 25vh;
+}
+.text-contents h2{
+    color: rgb(26, 83, 9);
+    font-size: 40px;
+    font-weight: bold;
+}
+.text-contents p{
+    font-size: 25px;
+    text-align: justify;
+}
+.contents img{
+    width: 300px;
+    border-radius: 50%;
+}
+.cards{
+    display: flex;
+    flex-direction: column;
+    gap: 55px;
+    margin-top: 80px;
+    text-align: center;
+}
+.cards h2{
+    font-size: 40px;
+    font-weight: bold;
+}
+.card{
+    background: none;
+    border-radius: 12px;
+    width: 360px;
+    border-radius: 10%;
+    padding: 30px 15px;
+    box-shadow: 0 8px 18px rgba(21, 54, 26, 0.253);
+    background-color: transparent;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+.card:hover {
+  transform: scale(1.02);
+  box-shadow: 0 6px 18px rgba(12, 116, 2, 0.568);
+}
+.card h4{
+    font-size: 30px;
+    font-weight: bold;
+}
+.card span{
+    font-size: 18px;
+}
+
+.footer{
+    background-color: #042408;
+    margin-top: 30px;
+    height: 35vh;
+}
+.footer-contents{
+    display: flex;
+    justify-content: space-around;
+    background-color: #042408;
+    height: 30vh;
+}
+.footer hr{
+    position: absolute;
+    left: 15px;
+    right: 15px;
+}
+.footer .rights{
+    background-color: transparent;
+    color: white;
+    position: relative;
+    top: 15px;
+    left: 15px;
+}
+.footer-left,
+.footer-right{
+    background: transparent;
+    background-color: transparent;
+    position: relative;
+    top: 40px;
+}
+.footer-logo,
+.footer-address{
+    background-color: transparent;
+    margin: 5px;
+}
+.footer-logo a{
+    font-style: italic;
+    font-size: 25px;
+    text-decoration: none;
+    color: white;
+    background-color: transparent;
+}
+.footer-address p{
+    background-color: transparent;
+    color: white;
+}
+.footer-address p span{
+    font-weight: bold;
+    background-color: transparent;
+    color: white;
+}
+.footer-allLinks ul{
+    list-style: none;
+    background-color: #042408;
+}
+.footer-allLinks ul li{
+    background-color: transparent;
+    padding: 5px;
+    transition: transform 0.4s ease;
+}
+.footer-allLinks ul li a{
+    font-size: 16px;
+    background-color: transparent;
+    color: white;
+    text-decoration: none;
+}
+.footer-allLinks ul li:hover{
+    transform: scale(1.12);
+}
