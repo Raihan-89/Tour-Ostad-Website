@@ -9,15 +9,6 @@
     background-color: #e4e8e9;
     margin: 0;
 }
-html,body{
-    height: 100%;
-    margin: 0;
-}
-body{
-    display: flex;
-    flex-direction: column;
-}
-/* Header & Nav */
 .header{
     position: sticky;
     width: 100%;
@@ -83,20 +74,18 @@ body{
 .nav-toggle {
   display: none;
 }
-main{
-    flex: 1;
-}
-/* footer part css */
 .footer{
+    position: sticky;
     padding: 20px;
     width: 100%;
+    height: 42.9vh;
     background-color: #042408;
 }
 .footer-contents{
     display: flex;
     justify-content: space-around;
     background-color: #042408;
-    height: 30vh;
+    height: 90%;
 }
 .footer hr{
     position: absolute;
@@ -114,6 +103,7 @@ main{
     position: relative;
     top: 40px;
     left: -250px;
+    height: 180px;
 }
 .footer-right{
     position: relative;
@@ -156,10 +146,6 @@ main{
 .footer-allLinks ul li:hover{
     transform: scale(1.12);
 }
-
-
-
-
 
 
 /* @media (max-width: 720px) {
