@@ -23,12 +23,12 @@
     color: white;
     font-weight: bold;
     font-style: italic;
-    font-size: 20px;
+    font-size: 30px;
 }
 .nav{
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: space-around;
     background-color: #00520A;
     padding: 10px 20px;
 }

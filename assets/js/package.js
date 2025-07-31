@@ -7,7 +7,7 @@ function createCard(packageName, packagePrice, packageDuration, packageImage){
               <h3 class="package-name">${packageName}</h3>
               <h4 class="package-price">${packagePrice}</h4>
               <span class="package-duration">${packageDuration}</span>
-              <button class="book-btn" >Book Now</button>
+              <button class="book-btn" onClick="location.href='../contact.html'">Book Now</button>
             </div>
           </div>`
 

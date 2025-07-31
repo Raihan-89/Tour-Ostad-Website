@@ -64,11 +64,22 @@
                 <div class="left-side">
                     <h5>Let us know what you think</h5>
                     <h2>Contact Our Customer Care</h2>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse dolorum dicta laborum tenetur maxime itaque unde modi ab quo illo cum, nam aliquam. Dolores voluptate aut, quis quaerat quos excepturi vero facilis nisi, at asperiores repellendus fuga voluptates. Id dolor vitae enim veniam.</p>
+                    <p>Call us to know about tour packages and book it as soon as possible. Also visit our Facebook page. Thank you!</p>
+                    <p><span style="font-weight: 400;color: black;">Phone: </span> <span style="font-weight: 600; color: black;">01637515309</span></p>
+                    <p><a class="fab fa-facebook-f fb-link" href="https://www.facebook.com/share/1AU5xRsuhe/" target="_blank"></a></p>
                 </div>
                 <div class="right-side">
                     <div class="form-card">
-                        <form class="contact-form" action="../assets/php/contact_process.php" method="post">
+                        <!-- <form class="contact-form" action="../assets/php/contact_process.php" method="post">
+                          <div class="user">
+                            <input type="text" name="name" placeholder="Your Name">
+                            <input type="text" name="phone" placeholder="Phone Number">
+                          </div>
+                            <input type="text" name="support_detail" placeholder="What support you need?">
+                            <textarea type="text" name="details" placeholder="Enter Details"></textarea>
+                            <input type="submit" value="SUBMIT">
+                        </form> -->
+                        <form class="contact-form" action="" method="post">
                           <div class="user">
                             <input type="text" name="name" placeholder="Your Name">
                             <input type="text" name="phone" placeholder="Phone Number">
@@ -78,6 +89,12 @@
                             <input type="submit" value="SUBMIT">
                         </form>
                     </div>
+                    <div id="popup" class="popup">
+                      <div class="popup-content">
+                        <p style="background: transparent;">This feature is currently unavailable.<br>We are working on it.</p>
+                        <button onclick="closePopup()">OK</button>
+                      </div>
+                  </div>
                 </div>
             </div>
         </div>
@@ -120,5 +137,16 @@
       <span class="rights">All Rights Reserved by Tour Ostad</span>
     </footer>
     <script src="/assets/js/script.js"></script>
+    <script>
+        document.querySelector('.contact-form').addEventListener('submit', function(e) {
+          e.preventDefault();
+          document.getElementById('popup').style.display = 'flex';
+        });
+
+        function closePopup() {
+          document.getElementById('popup').style.display = 'none';
+        }
+    </script>
+
   </body>
 </html>
