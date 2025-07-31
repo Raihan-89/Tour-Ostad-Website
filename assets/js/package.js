@@ -14,7 +14,7 @@ function createCard(packageName, packagePrice, packageDuration, packageImage){
         document.querySelector(".package-cards").innerHTML = document.querySelector(".package-cards").innerHTML + html
 }
 
-createCard("Sitakunda Tour","1099TK","2 Night 1 Day","/assets/images/sitakunda.jpg")
-createCard("Cox's Bazar Tour","1499TK","2 Night 1 Day","/assets/images/cox's bazar.jpg")
-createCard("Rangamati Tour","1499TK","2 Night 1 Day","/assets/images/Rangamati.jpg")
-createCard("Sylhet Tour","1499TK","2 Night 1 Day","/assets/images/Sylhet.jpg")
+createCard("Sitakunda Tour","1099TK","2 Night 1 Day","assets/images/sitakunda.jpg")
+createCard("Cox's Bazar Tour","1499TK","2 Night 1 Day","assets/images/cox's bazar.jpg")
+createCard("Rangamati Tour","1499TK","2 Night 1 Day","assets/images/Rangamati.jpg")
+createCard("Sylhet Tour","1499TK","2 Night 1 Day","assets/images/Sylhet.jpg")
