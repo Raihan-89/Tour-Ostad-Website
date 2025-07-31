@@ -51,7 +51,7 @@
    - MySQL
 4. Open Browser and enjoy the website:
    ```bash
-   localhost/html/index.html
+   localhost/index.html
 
 ## 🙏 Support
 
